@@ -342,14 +342,15 @@
                             class="text-2xl font-black tracking-tighter text-gray-900">DAISY</span>
                     </div>
                     <div class="flex gap-10 font-bold text-gray-400 text-sm">
-                        <a href="#"
-                            class="hover:text-daisy transition-colors">Privacy
-                            Policy</a>
-                        <a href="#"
-                            class="hover:text-daisy transition-colors">Terms of
-                            Service</a>
-                        <a href="#"
-                            class="hover:text-daisy transition-colors">Contact</a>
+                        <a href="#features"
+                            class="hover:text-daisy transition-colors">Fitur
+                        </a>
+                        <a href="#how-it-works"
+                            class="hover:text-daisy transition-colors">Cara
+                            Kerja
+                        </a>
+                        <a href="#download"
+                            class="hover:text-daisy transition-colors">Download</a>
                     </div>
                 </div>
                 <div
@@ -358,13 +359,17 @@
                         adalah alat AI dan tidak menggantikan diagnosis medis
                         profesional. Konsultasikan dengan dokter untuk kasus
                         yang parah.</p>
-                    <p class="text-gray-400 text-xs">&copy; 2026 DAISY AI.
-                        Dibuat untuk kesehatan kulit yang lebih baik.</p>
+                    <p class="text-gray-400 text-xs">
+                        &copy; <span id="year"></span> DAISY AI.
+                        Dibuat untuk kesehatan kulit yang lebih baik.
+                    </p>
                 </div>
             </div>
         </footer>
 
         <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+
         lucide.createIcons();
 
         // Logika Smooth Scrolling
